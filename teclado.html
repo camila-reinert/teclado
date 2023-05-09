@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teclado</title>
+<style>
+body
+{
+    background-color: pink;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.teclado
+{
+    background-color: black;
+    width: 90%;
+    height: 600px;
+    margin-top: 100px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.div1
+{
+    background-color: blue;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.div2
+{
+    background-color: green;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+.div3
+{
+    background-color: yellow;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+.div4
+{
+    background-color: pink;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+.div5
+{
+    background-color: aquamarine;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+.div6
+{
+    background-color: brown;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+.esc
+{
+    background-color: white;
+    width: 70px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    font-size: 25px;
+    align-items: center;
+}
+.linha1
+{
+    background-color: white;
+    width: 80px;
+    height: 70px;
+    margin-top: -1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    font-size: 30px;
+}
+.backspace
+{
+    background-color: white;
+    width: 110px;
+    height: 70px;
+    margin-top: -1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    font-size: 25px;
+    align-items: center;
+}
+.tab
+{
+    background-color: white;
+    width: 110px;
+    height: 70px;
+    margin-top: -1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+}
+.linha2
+{
+    background-color: white;
+    width: 80px;
+    height: 70px;
+    margin-top: -1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    font-size: 30px;
+    align-items: center;
+}
+.pesquisa
+{
+    background-color: white;
+    width: 110px;
+    height: 70px;
+    margin-top: -1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+}
+.linha3
+{
+    background-color: white;
+    width: 80px;
+    height: 70px;
+    margin-top: -1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    font-size: 30px;
+    align-items: center;
+}
+.enter
+{
+    background-color: white;
+    width: 110px;
+    height: 70px;
+    margin-top: -1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+.shift
+{
+    background-color: white;
+    width: 110px;
+    height: 70px;
+    margin-top: -1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+.linha4
+{
+    background-color: white;
+    width: 80px;
+    height: 70px;
+    margin-top: -1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    font-size: 30px;
+    align-items: center;
+}
+.ctrl
+{
+    background-color: white;
+    width: 110px;
+    height: 70px;
+    margin-top: -1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+.alt
+{
+    background-color: white;
+    width: 110px;
+    height: 70px;
+    margin-top: -1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+.espaço
+{
+    background-color: white;
+    width: 410px;
+    height: 70px;
+    margin-top: -1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+.setas
+{
+    background-color: blue;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+
+}
+.cb
+{
+    background-color: yellow;
+    width: 80px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+</style>
+</head>
+<body>
+    <div class="teclado">
+        <br>
+        <div class="div1"> 
+            <div class="esc"> Esc </div> 
+        </div>
+        <br>
+        <div class="div2">
+            <div class="linha1">~ <br>´</div>
+            <div class="linha1">! <br> 1</div>
+            <div class="linha1">@ <br> 2</div>
+            <div class="linha1"># <br> 3</div>
+            <div class="linha1">$ <br> 4</div>
+            <div class="linha1">% <br> 5</div>
+            <div class="linha1">^ <br> 6</div>
+            <div class="linha1">& <br> 7</div>
+            <div class="linha1">* <br> 8</div>
+            <div class="linha1">( <br> 9</div>
+            <div class="linha1">) <br> 0</div>
+            <div class="linha1">- <br> _</div>
+            <div class="linha1">+ <br> =</div>
+            <div class="backspace">backspace</div>
+        </div>
+        <br>
+        <div class="div3">
+            <div class="tab">tab</div>
+            <div class="linha2">q</div>
+            <div class="linha2">w</div>
+            <div class="linha2">e</div>
+            <div class="linha2">r</div>
+            <div class="linha2">t</div>
+            <div class="linha2">y</div>
+            <div class="linha2">u</div>
+            <div class="linha2">i</div>
+            <div class="linha2">o</div>
+            <div class="linha2">p</div>
+            <div class="linha2">{ <br> [</div>
+            <div class="linha2">} <br> ]</div>
+            <div class="linha2">| <br> \</div>
+        </div>
+        <br>
+        <div class="div4">
+            <div class="pesquisa">
+                <img src="lupa.png" width="50px">
+            </div>
+            <div class="linha3">a</div>
+            <div class="linha3">s</div>
+            <div class="linha3">d</div>
+            <div class="linha3">f</div>
+            <div class="linha3">g</div>
+            <div class="linha3">h</div>
+            <div class="linha3">j</div>
+            <div class="linha3">k</div>
+            <div class="linha3">l</div>
+            <div class="linha3">: <br> ;</div>
+            <div class="linha3">" <br> '</div>
+            <div class="enter">enter</div>
+        </div>
+        <br>
+        <div class="div5">
+            <div class="shift">shift</div>
+            <div class="linha4">z</div>
+            <div class="linha4">x</div>
+            <div class="linha4">c</div>
+            <div class="linha4">v</div>
+            <div class="linha4">b</div>
+            <div class="linha4">n</div>
+            <div class="linha4">m</div>
+            <div class="linha4"> < <br> ,</div>
+            <div class="linha4"> > <br> .</div>
+            <div class="linha4">? <br> /</div>
+            <div class="shift">shift</div>
+        </div>
+        <br>
+        <div class="div6">
+            <div class="ctrl">ctrl</div>
+            <div class="alt">alt</div>
+            <div class="espaço"></div>
+            <div class="alt">alt</div>
+            <div class="ctrl">ctrl</div>
+            <div class="setas">
+                <div class="setad"> 
+                    <img src="2.png" width="40px">
+                </div>
+                <div class="cb">
+                    <div class="setac"> 
+                        <img src="3.png" width="30px">
+                    </div>
+                    <br>
+                    <div class="setab"> 
+                        <img src="4.png" width="30px">
+                    </div>
+                </div>
+                <div class="setae">
+                    <img src="1.png" width="40px"> 
+                </div>
+            </div>
+           
+        </div>
+
+    </div>
+
+</body>
+</html>
